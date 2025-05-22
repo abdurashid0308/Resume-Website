@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf) format('truetype'),
+         url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    color: cyan;
+}
+
+.sticky {
+}
+
+a {
+    text-decoration: none;
+    color: cyan;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 78, 194, 0.36); /* Improved readability */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.story-border {
+    width: 65px;
+    height: 65px;
+    background: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-border img {
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Fixed missing value */
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out; /* Added transition for smooth hover effect */
+}
+
+nav a:hover {
+    border-color: cyan; /* Fixed invalid property */
+    box-shadow: 0 0 10px cyan;
+    transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+nav a div {
+    display: flex;
+    gap: 10px;
+}
+
+nav a img {
+    filter: invert(61%) sepia(98%) saturate(1243%) hue-rotate(144deg) brightness(94%) contrast(101%);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+main #home-section{
+    display: flex;
+    margin-top: 200px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    font-size: 50px;
+}
